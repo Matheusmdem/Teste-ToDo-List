@@ -11,7 +11,7 @@ export const NavbarContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: right;
-    background: black;
+    background: #202024;
     width: 100%;
     gap: 2rem;
     height: 2.8rem;
