@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { TasksDone } from "./components";
 import { FormContainer } from "./styles";
 import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm, FormProvider } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { TasksContext } from '../../context/TaskContext';
 
 
@@ -48,11 +48,8 @@ export function Todo() {
             Add
           </button>
         </div>
-        <FormProvider {...newTaskForm}>
-          <TasksDone />
-        </FormProvider>
+        <TasksDone />
       </form>
-
     </FormContainer>
   )
 }
